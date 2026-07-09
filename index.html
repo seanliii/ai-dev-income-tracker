@@ -191,7 +191,7 @@ function openModal(id){const d=incomeData.find(x=>x.id===id);if(!d)return;const 
 function closeModal(){document.getElementById('detailModal').classList.remove('active')}
 document.getElementById('detailModal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeModal()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
-document.getElementById('searchInput').addEventListener('input',e=>{searchQuery=e.target.value;activeType='all';activeRegion='all';activeExp='all';document.querySelectorAll('.filter-btn').forEach(btn=>{if(btn.dataset.filter==='all')btn.classList.add('active');else btn.classList.remove('active')});renderCards()});
+document.getElementById('searchInput').addEventListener('input',e=>{searchQuery=e.target.value;renderCards()});
 document.querySelectorAll('.filter-btn').forEach(btn=>{btn.addEventListener('click',()=>{const group=btn.dataset.group;const filter=btn.dataset.filter;document.querySelectorAll(`.filter-btn[data-group="${group}"]`).forEach(b=>b.classList.remove('active'));btn.classList.add('active');if(group==='type')activeType=filter;else if(group==='region')activeRegion=filter;else if(group==='exp')activeExp=filter;renderCards()})});
 document.getElementById('cardViewBtn').addEventListener('click',()=>{viewMode='card';document.getElementById('cardViewBtn').classList.add('active');document.getElementById('tableViewBtn').classList.remove('active');renderCards()});
 document.getElementById('tableViewBtn').addEventListener('click',()=>{viewMode='table';document.getElementById('tableViewBtn').classList.add('active');document.getElementById('cardViewBtn').classList.remove('active');renderCards()});
