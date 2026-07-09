@@ -80,12 +80,12 @@ header p{color:#a0aec0;font-size:1.1rem;max-width:600px;margin:0 auto}
 </header>
 <div class="container">
 <div class="stats-grid">
-<div class="stat-card"><div class="stat-number" id="statTotal">12</div><div class="stat-label">追踪案例</div></div>
-<div class="stat-card"><div class="stat-number" id="statChina">48.5万</div><div class="stat-label">中国平均年薪</div></div>
-<div class="stat-card"><div class="stat-number" id="statGlobal">$180万</div><div class="stat-label">海外平均年薪</div></div>
-<div class="stat-card"><div class="stat-number" id="statTop">$80M</div><div class="stat-label">最高收入</div></div>
-<div class="stat-card"><div class="stat-number" id="statRole">大模型算法</div><div class="stat-label">热门岗位</div></div>
-<div class="stat-card"><div class="stat-number trend-up">↑</div><div class="stat-label">趋势: 持续上涨</div></div>
+<div class="stat-card"><div class="stat-number" id="statTotal">17</div><div class="stat-label">追踪案例</div></div>
+<div class="stat-card"><div class="stat-number" id="statChina">60.8万</div><div class="stat-label">中国平均年薪</div></div>
+<div class="stat-card"><div class="stat-number" id="statGlobal">$200万+</div><div class="stat-label">海外平均年薪</div></div>
+<div class="stat-card"><div class="stat-number" id="statTop">$8000万</div><div class="stat-label">最高收入</div></div>
+<div class="stat-card"><div class="stat-number" id="statRole">大模型架构</div><div class="stat-label">热门岗位</div></div>
+<div class="stat-card"><div class="stat-number trend-up">↑17%</div><div class="stat-label">数据更新</div></div>
 </div>
 <div class="controls">
 <div class="search-box"><input type="text" id="searchInput" placeholder="搜索开发者、岗位、公司..."></div>
@@ -144,7 +144,12 @@ const incomeData=[
 {id:9,name:"AI产品经理(应届)",role:"AI产品经理",income:"¥15-25万/年",type:"全职",region:"中国",exp:"应届",company:"互联网大厂",summary:"AI产品经理招聘指数170，位列第五。应届AI产品经理月薪1.5-2.5万，是AI生态中连接技术与商业的关键角色。",insight:"AI产品经理是技术落地商业化的枢纽，招聘需求持续旺盛，适合产品背景转型。",source:"https://blog.csdn.net/ytt0523_com/article/details/161825338",numbers:{salary:"15-25万",index:"招聘指数170#5",entry:"产品背景可转型"}},
 {id:10,name:"AI提示工程师/运营",role:"提示工程师/AI运营",income:"¥15-30万/年",type:"全职",region:"中国",exp:"1-3年",company:"AI公司/大厂",summary:"第三梯队AI岗位，应届月薪1.5-2.5万，有经验能到3万以上。门槛相对较低，适合传统开发或产品岗转型。主要负责提示词优化、AI输出质量调优。",insight:"提示工程是AI应用落地的核心能力，随着模型能力提升，该角色正向'AI架构师'方向进化。",source:"https://blog.csdn.net/Z987421/article/details/161794049",numbers:{salary:"15-30万",monthly:"12-25K",barrier:"门槛较低，适合转型"}},
 {id:11,name:"AI科学家(高薪代表)",role:"AI科学家",income:"¥158万+/年",type:"全职",region:"中国",exp:"资深",company:"头部AI实验室",summary:"AI科学家月薪13.2万元领跑，年薪158万+。算法、芯片岗位占据高薪前列。AI领域新发岗位平均月薪62,850元，但内部分化明显——高薪属于A类技术底座人才。",insight:"AI薪资分化严重：头部博士级科学家年薪百万，而基础应用岗涨幅有限。平均数和中位数是两回事。",source:"https://baijiahao.baidu.com/s?id=1865155700854680092",numbers:{monthly:"132K",annual:"158万+",avg:"行业平均62,850/月"}},
-{id:12,name:"AI自由职业者",role:"AI应用开发/咨询",income:"¥20-60万/年",type:"自由职业",region:"中国",exp:"3-5年",company:"自由接单",summary:"AI应用层定价权正在从开发者转向平台，但垂直场景的深度定制服务仍有溢价空间。通过接单开发AI客服、知识库、文案工具等，年收入20-60万。",insight:"AI自由职业的护城河是垂直行业know-how，通用工具开发被平台挤压，但定制服务仍有空间。",source:"https://news.qq.com/rain/a/20260622A064VM00",numbers:{salary:"20-60万",model:"项目制/订阅制",trend:"平台挤压通用工具"}}
+{id:12,name:"AI自由职业者",role:"AI应用开发/咨询",income:"¥20-60万/年",type:"自由职业",region:"中国",exp:"3-5年",company:"自由接单",summary:"AI应用层定价权正在从开发者转向平台，但垂直场景的深度定制服务仍有溢价空间。通过接单开发AI客服、知识库、文案工具等，年收入20-60万。",insight:"AI自由职业的护城河是垂直行业know-how，通用工具开发被平台挤压，但定制服务仍有空间。",source:"https://news.qq.com/rain/a/20260622A064VM00",numbers:{salary:"20-60万",model:"项目制/订阅制",trend:"平台挤压通用工具"}}},
+{id:13,name:"豆包大模型应用架构专家",role:"大模型应用架构专家",income:"¥128万/年",type:"全职",region:"中国",exp:"5年+",company:"字节跳动(豆包)",summary:"某大厂\"豆包\"业务给\"大模型应用架构专家\"开出了128万元年薪。即便是偏工程化的大模型部署优化工程师，年薪也能稳定在50-80万元。",insight:"掌握垂直领域大模型训练及优化能力的人才供需比降至约0.3，即3个岗位抢1个人。大模型应用架构专家是2026年最炙手可热的高薪岗位。",source:"https://blog.csdn.net/2401_85343303/article/details/160400246",numbers:{salary:"128万",monthly:"10.7万",demand:"供需比0.3"}},
+{id:14,name:"多模态算法工程师",role:"多模态/具身智能算法工程师",income:"¥60-200万/年",type:"全职",region:"中国",exp:"3-5年",company:"AI机器人/自动驾驶公司",summary:"科锐国际报告显示，多模态算法工程师年薪区间60-150万元，具身智能算法工程师年薪最高可达200万元。VLA具身智能算法工程师年薪80-120万，多模态融合算法岗50-90万。",insight:"具身智能领域招聘指数达到579，较2025年的36暴增15倍，进入人才高速扩张期。兼具机械控制与AI算法融合能力的复合型人才，跳槽薪资涨幅推升至50%以上。",source:"https://blog.csdn.net/2401_85343303/article/details/160400246",numbers:{salary:"60-200万",growth:"招聘指数579(+15x)",premium:"跳槽涨幅50%+"}},
+{id:15,name:"AI独立开发者(月入3万)",role:"独立开发者",income:"¥3万/月",type:"独立开发",region:"中国",exp:"1-3年",company:"个人产品",summary:"一位程序员花了两周用AI做了一个小工具，上线第一个月赚了8000块，现在稳定月入3万。工作流程：用ChatGPT梳理产品逻辑，Claude推荐技术栈，GitHub Copilot写代码，Midjourney生成UI。",insight:"AI独立开发已不再是头部极客的专属，普通程序员借助AI工具也能实现月入过万的被动收入。关键是用AI降低开发门槛，聚焦解决具体痛点。",source:"https://blog.csdn.net/EnjoyEDU/article/details/160581427",numbers:{monthly:"3万",timeline:"2周开发",tool:"GPT+Claude+Copilot+Midjourney"}},
+{id:16,name:"OpenAI软件工程师",role:"AI软件工程师",income:"$92.5万/年",type:"全职",region:"海外",exp:"3-5年",company:"OpenAI",summary:"根据Levels.fyi数据，OpenAI为软件工程师提供高达92.5万美元（约670万人民币）的年薪，包含30万美元基本工资和62.5万美元利润参与单位(PPU)。",insight:"OpenAI的PPU机制是独创激励方式，因公司非传统结构无法出售股份，用PPU让员工分享未来盈利。顶尖AI公司薪资天花板远超传统互联网。",source:"https://finance.sina.com.cn/7x24/2023-06-27/doc-imyysxhx0425154.shtml",numbers:{total:"$92.5万",base:"$30万",ppu:"$62.5万",rmb:"约670万"}},
+{id:17,name:"高性能计算工程师",role:"高性能计算(HPC)工程师",income:"¥80-150万/年",type:"全职",region:"中国",exp:"资深",company:"头部AI实验室/云厂商",summary:"2026年春招数据显示，高性能计算工程师供需比仅0.15，相当于7家企业抢1个人。AI基础设施工程师月薪突破7万大关。",insight:"AI算力瓶颈推动了HPC人才的稀缺性，从芯片架构到分布式训练框架，每个环节都需要顶尖系统工程师。这是AI行业的\"水电煤\"人才。",source:"https://blog.csdn.net/m0_48891301/article/details/160587084",numbers:{supply_ratio:"0.15(7:1)",monthly:"7万+",premium:"供需极度失衡"}}
 ];
 let activeType='all',activeRegion='all',activeExp='all',searchQuery='',viewMode='card';
 const cardsContainer=document.getElementById('cardsContainer');
