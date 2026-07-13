@@ -80,7 +80,7 @@ header p{color:#a0aec0;font-size:1.1rem;max-width:600px;margin:0 auto}
 </header>
 <div class="container">
 <div class="stats-grid">
-<div class="stat-card"><div class="stat-number" id="statTotal">24</div><div class="stat-label">追踪案例</div></div>
+<div class="stat-card"><div class="stat-number" id="statTotal">25</div><div class="stat-label">追踪案例</div></div>
 <div class="stat-card"><div class="stat-number" id="statChina">60.8万</div><div class="stat-label">中国平均年薪</div></div>
 <div class="stat-card"><div class="stat-number" id="statGlobal">$200万+</div><div class="stat-label">海外平均年薪</div></div>
 <div class="stat-card"><div class="stat-number" id="statTop">$8000万</div><div class="stat-label">最高收入</div></div>
@@ -155,7 +155,8 @@ const incomeData=[
 {id:21,name:"200人AI副业测试",role:"AI副业实践者",income:"¥5000+/月(仅22%)",type:"副业",region:"中国",exp:"不限",company:"多平台",summary:"200个普通人做AI副业，月收入5000元以上只占22%。那些月入过万的案例，背后要么有多年行业积累，要么有现成的客户资源，AI只是把家底放大了。",insight:"AI是放大器不是许愿机。有业务链路的人用它提效5-10倍，没有的人只换来一堆昂贵的废纸。没有地基别谈盖楼。",source:"https://post.smzdm.com/p/a95eqq9p/",numbers:{月入5000以上:"22%",月入过万前提:"行业积累+客户资源",成功关键:"业务链路+AI放大"}},
 {id:22,name:"Vibe Coding SaaS月入15万",role:"独立开发者/SaaS",income:"¥15万/月",type:"独立开发",region:"中国",exp:"1-3年",company:"个人产品",summary:"用Vibe Coding零代码搭SaaS工具，月入15万+。核心是选大市场子赛道，把客户工作流程1:1写下来，从服务开始而不是产品。",insight:"Vibe Coding工作流成熟后编码效率提升5-8倍，一个人可同时维护3-5个产品。",source:"https://cloud.tencent.com/developer/article/2701684",numbers:{月收入:"¥15万",效率提升:"5-8倍",产品数:"3-5个"}},
 {id:23,name:"2026年单人开发者微SaaS指南",role:"独立开发者",income:"¥3-15万/月",type:"独立开发",region:"海外",exp:"1-3年",company:"个人产品",summary:"2026年单人开发者用AI建盈利微SaaS指南。实用工具平台走SEO流量路线，通过展示广告、推广链接或免费增值模式变现。关键是解决细小、具体、日常问题的微工具。",insight:"AI封装器已严重饱和，真正机会是微SaaS和实用工具平台。",source:"https://m.163.com/dy/article/L1ELU0O005561FZV.html",numbers:{模式:"SEO流量+广告/联盟",产品类型:"微SaaS/实用工具",开发周期:"几周"}},
-{id:24,name:"AI-first SaaS 10步Playbook",role:"独立开发者",income:"$0-50万/月",type:"独立开发",region:"海外",exp:"不限",company:"个人产品",summary:"SaaS没死，进化成了「Agents+Software+Media」新物种。从大市场切入子赛道→量化痛点→从服务开始→AI当员工→边建产品边建媒体。不需要VC、不需要大团队。",insight:"AI-first SaaS核心：挑对赛道+亲手干一遍+把AI当员工+边建产品边建媒体。",source:"https://cloud.tencent.com/developer/article/2701684",numbers:{策略:"Agents+Software+Media",核心:"挑对赛道+AI当员工",模式:"从服务开始不是从产品"}}];
+{id:24,name:"AI-first SaaS 10步Playbook",role:"独立开发者",income:"$0-50万/月",type:"独立开发",region:"海外",exp:"不限",company:"个人产品",summary:"SaaS没死，进化成了「Agents+Software+Media」新物种。从大市场切入子赛道→量化痛点→从服务开始→AI当员工→边建产品边建媒体。不需要VC、不需要大团队。",insight:"AI-first SaaS核心：挑对赛道+亲手干一遍+把AI当员工+边建产品边建媒体。",source:"https://cloud.tencent.com/developer/article/2701684",numbers:{策略:"Agents+Software+Media",核心:"挑对赛道+AI当员工",模式:"从服务开始不是从产品"}},
+{id:25,name:"SambaNova Systems (AI芯片独角兽)",role:"AI芯片公司",income:"$10亿F轮/估值$110亿",type:"创业",region:"海外",exp:"5年+",company:"SambaNova Systems",summary:"美国AI芯片独角兽SambaNova宣布完成10亿美元F轮融资，估值达110亿美元，较今年2月翻4.5倍。由General Catalyst、BlackRock等领投。",insight:"AI芯片赛道持续火热，SambaNova作为GPU替代方案提供商，估值在半年内翻4.5倍，反映市场对AI算力基础设施的强劲需求。",source:"https://so.html5.qq.com/page/real/search_news?docid=70000021_5236a4e402823652",numbers:{融资:"$10亿F轮",估值:"$110亿",增长:"4.5x(半年)",领投:"General Catalyst"}}];
 let activeType='all',activeRegion='all',activeExp='all',searchQuery='',viewMode='card';
 const cardsContainer=document.getElementById('cardsContainer');
 const tableView=document.getElementById('tableView');
